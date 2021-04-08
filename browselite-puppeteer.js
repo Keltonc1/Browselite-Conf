@@ -85,7 +85,7 @@ var regexPatts = {
 		/quality=[0-9]+/,
 	],
 	'format':[
-		/format=[0-9]+/,
+		/format=[a-z]+/,
 	]
 };
 
@@ -100,7 +100,7 @@ var regexStrs = {
 		'quality=%q',
 	],
 	'format':[
-		'fmt=%f',
+		'format=%f',
 	]
 };
 
