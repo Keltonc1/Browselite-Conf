@@ -6,7 +6,7 @@ implementation of the url rewriting and refetching components of Browselite.
 
 The code was tested on Ubuntu 18.04 using NodeJS v12.7, Lighthouse v6.1, Puppeteer v5.0, and Chromium v83.0
 
-To run the code use NPM to install the required packages, e.g. lighthouse, lighthouse-logger, chrome-launcher, and puppeteer.
+To run the code use NPM to install the required packages, e.g. lighthouse, lighthouse-logger, chrome-launcher, node fetch, and puppeteer.
 
 Create a data folder to store lighthouse data and run Browselite with the following:
 
@@ -32,7 +32,6 @@ node browselite-puppeteer ./data www.independent.co.uk 0.5 true true true
 5) Images are fetched using Range Requests at a percentage of their data as dictacted by the input parameter, 'nextPct'
 6) The 2KB images are replaced with the Range Requested contents, and reflected using the Web Canvas
 7) After the load of the page, lighthouse trials are recorded.
-
 
 
 
