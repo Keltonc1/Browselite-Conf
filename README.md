@@ -24,13 +24,14 @@ node browselite-puppeteer ./data www.independent.co.uk 0.5 true true true
 6) doInterception -- boolean to indicate whether or not to actually reduce image data with rewriting/range requests
 
 ## General Flow
--- Opens the a debugging port for the page and uses lighthouse to load the page to collect various statistics.
--- All images are set to Range Request 2KB to prevent Content Layout Shifts, to fire onload events for these images, and to keep general page integrity. 
--- Images are matched to their corresponding DOM locations
--- Image URLs are run through rule-based regexes in case they can be made smaller at the server
--- Images are fetched using Range Requests at a percentage of their data as dictacted by the input parameter, 'nextPct'
--- The 2KB images are replaced with the Range Requested contents, and reflected using the Web Canvas
--- After the load of the page, lighthouse trials are recorded.
+
+1) Opens the a debugging port for the page and uses lighthouse to load the page to collect various statistics.
+2) All images are set to Range Request 2KB to prevent Content Layout Shifts, to fire onload events for these images, and to keep general page integrity. 
+3) Images are matched to their corresponding DOM locations
+4) Image URLs are run through rule-based regexes in case they can be made smaller at the server
+5) Images are fetched using Range Requests at a percentage of their data as dictacted by the input parameter, 'nextPct'
+6) The 2KB images are replaced with the Range Requested contents, and reflected using the Web Canvas
+7) After the load of the page, lighthouse trials are recorded.
 
 
 
