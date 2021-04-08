@@ -10,9 +10,9 @@ To run the code use NPM to install the required packages, e.g. lighthouse, light
 
 Create a data folder to store lighthouse data and run Browselite with the following:
 
-'''
+`
 node browselite-puppeteer ./data www.independent.co.uk 0.5 true true true
-'''
+`
 
 ## Parameters
 
